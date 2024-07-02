@@ -42,6 +42,11 @@ models:
       +materialized: table
     staging:
       +materialized: table
+    
+      incremental_strategy: merge
+    
+
+
       
 
       
