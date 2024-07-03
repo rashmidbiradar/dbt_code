@@ -42,6 +42,9 @@ models:
       +materialized: table
     staging:
       +materialized: table
+    DBT_Stage_tables:
+      +materialized: table
+
     
       incremental_strategy: merge
     

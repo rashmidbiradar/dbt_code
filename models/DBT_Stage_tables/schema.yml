@@ -1,0 +1,11 @@
+version: 2
+sources:
+    - name: DBT_SF_Schema
+      database: "{{('DBT_Practice')}}"
+      schema: stage_layer
+      tables:
+        - name: stg_product
+        - name: stg_item
+        - name: stg_orders_data
+        - name: stg_customers_data
+
