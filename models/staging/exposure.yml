@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+
+  - name: weekly_metrics
+    label: saisri by the Week
+    type: dashboard
+    maturity: high
+    url: https://bi.tool/dashboards/1
+    description: >
+     
+
+    depends_on:
+      - ref('final_business')
+      
+    owner:
+      name:  saisri
+      email: snowflaketraining01@gmail.com
