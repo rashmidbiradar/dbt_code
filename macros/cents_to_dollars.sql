@@ -5,5 +5,5 @@
 {%- endmacro %}
 
 {% macro default__cents_to_dollars(column_name) -%}
-     ( price / 100)::numeric(16, 2)
+     ({{column_name}} / 100)::numeric(16, 2)
 {%- endmacro %}

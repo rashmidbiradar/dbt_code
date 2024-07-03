@@ -1,6 +1,3 @@
-{{ config(materialized='ephemeral') 
-}}
-
 WITH tb1 as(
     select id,
     order_date,
