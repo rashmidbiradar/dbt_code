@@ -3,5 +3,5 @@
 WITH tb1 as(
     select
     id 
-    from {{source('datafeed_shared_schema','stg_customerdata')}})
+    from dbt_db.staging_layer.stg_customerdata)
     select * from tb1

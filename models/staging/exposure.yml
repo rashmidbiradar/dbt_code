@@ -1,3 +1,4 @@
+
 version: 2
 
 exposures:
@@ -6,13 +7,16 @@ exposures:
     label: saisri by the Week
     type: dashboard
     maturity: high
-    url: https://bi.tool/dashboards/1
-    description: >
-     
-
+    description: 
+      For more exposure about project details
     depends_on:
-      - ref('final_business')
-      
+        - ref('final_business')
+        - ref('order_merge')
+        - ref('order_macro_data')
+        - ref('business_table')
+        - source('datafeed_shared_schema','stg_order')
+        - source('datafeed_shared_schema','stg_customerdata')
+        - source('datafeed_shared_schema','stg_payments')
     owner:
-      name:  saisri
-      email: snowflaketraining01@gmail.com
+        name: saisri
+        email: snowflaketraining01@gmail.com
