@@ -12,7 +12,7 @@ with customers as (
 ),
 
 employees as(
-select * from {{ref('employees')}}
+select * from {{ref('emp')}}
 ),
 orders as (
     select

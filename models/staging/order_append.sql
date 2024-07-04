@@ -3,4 +3,4 @@
     incremental_strategy="append",
 ) }}
 
-select * from {{source('datafeed_shared_schema','stg_order')}} where id in (2)
+select * from dbt_db.staging_layer.stg_order where id in (2)
