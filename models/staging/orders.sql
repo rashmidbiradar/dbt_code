@@ -1,5 +1,7 @@
 WITH tb1 as(
-    select *
-
-    from {{source('datafeed_shared_schema','stg_order')}})
+    select 
+    id,
+    user_id as userid,
+    order_date
+    from {{source('datafeed_shared_schema','stg_orders')}})
     select * from tb1

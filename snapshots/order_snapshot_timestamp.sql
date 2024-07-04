@@ -1,5 +1,4 @@
 {% snapshot order_snapshot_timestamp %}
-
     {{
         config(
           target_schema='snapshots',
@@ -9,6 +8,6 @@
         )
     }}
 
-    select * from {{ref('orders')}}
+    select * from {{source('datafeed_shared_schema','customers')}}
 
 {% endsnapshot %}

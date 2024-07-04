@@ -44,7 +44,8 @@ models:
       +materialized: table
     DBT_Stage_tables:
       +materialized: table
-    
+snapshots:
+  +target_schema: snapshots    
 
 
     
