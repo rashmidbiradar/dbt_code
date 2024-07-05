@@ -1,4 +1,4 @@
-{% snapshot orders_snapshot_checks %}
+{% snapshot snap_orders_checks %}
 
     {{
         config(
