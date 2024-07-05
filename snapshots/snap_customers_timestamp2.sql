@@ -1,4 +1,4 @@
-{% snapshot orders_snapshot_timestamp2 %}
+{% snapshot snap_customers_timestamp2 %}
 
 {{
     config(
